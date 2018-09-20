@@ -1,0 +1,39 @@
+-------------
+Introduction:
+-------------
+RADDOSE: Calculations of absorbed X-ray dose by protein crystals
+
+Reference: 
+X-ray absorption by macromolecular crystals: the effects of wavelength and crystal composition on absorbed dose.
+Murray, J.W., Garman, E.F., and Ravelli, R. B. G 
+J. Appl. Cryst. (2004) 37, 513-522.
+
+http://biop.ox.ac.uk/www/garman/lab_tools.html#guide8
+
+--------------
+Prerequisites:
+--------------
+GNU Fortran (GCC) 3.3.5 20050117
+We have tested it with:
+ccp4-4.2.2, ccp4-5.0.2, ccp4-6.0.2
+
+-------------
+Compile with:
+-------------
+#!/bin/bash
+g77 -O -w -fno-second-underscore -fno-globals -fno-automatic -o raddose name2z.f z2name.f mucal.f upcase.f raddose.f -lccp4 -L./4.2.2/lib
+
+
+------
+Usage:
+------
+Setup a proper CCP4 environment before running RADDOSE
+$ setup_ccp4
+$ raddose
+
+----------
+Questions:
+----------
+elspeth@biop.ox.ac.uk
+
+Last updated: 05-07-2007
