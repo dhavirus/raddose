@@ -5,3 +5,15 @@ We do not own the rights to this collection of scripts and codes.
 Further requests and credits, please refer to the attached code's 
 manual "raddose.docx".
 ##################################################################
+
+About executing the code:
+The easiest way to execute raddose is 
+  1. Create a CCP4 environment (install CCP4).
+  2. Copy this redistributions to a directory.
+  3. Put the path to raddose executable at the beginning of the
+     input file.
+     Example: /programs/raddose_directory/raddose << EOF
+              #KEYWORD parameters
+              EOF
+  4. In the input file's directory, execute with
+     $ input.in > output
