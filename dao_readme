@@ -17,3 +17,5 @@ The easiest way to execute raddose is
               EOF
   4. In the input file's directory, execute with
      $ input.in > output
+
+##################################################################
