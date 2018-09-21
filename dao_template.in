@@ -1,5 +1,5 @@
 /programs/raddose/raddose << EOF
-# > gfp231.log
+# > gfp.log
 RANGE 7.0 19.0 0.25
 ENERGY  13.78
 #E=12.3981/lambda
@@ -14,7 +14,9 @@ BEAM 0.05 0.05
 !GAUSS 0.13 0.28
 CRYST 1.00 0.10 0.10
 PHOSEC 3.0E11
-EXPO 0.5
+#photon/sec: input based on information (e.g. 
+#photonflux, attenuator, beam size, etc.) at beamline 
+EXPO 1
 IMAGE 360
 #1sec*0.5deg*360frames
 !SPLINOR Se Se.splinor
